@@ -1,0 +1,32 @@
+/* Add application styles & imports to this file! */
+.card {
+  border-radius: 0rem;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-columns {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+    column-count: 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-columns {
+    column-count: 5;
+  }
+}
+
+.btn.btn-secondary.float-left.mt-2.mb-3 {
+  border-radius: 0em;
+}

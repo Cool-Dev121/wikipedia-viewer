@@ -1,0 +1,20 @@
+<!-- Form -->
+
+<form class="form">
+	<div class="input-group mb-3">
+		<input class="form-control col-sm-10" #box (blur)="doSearch('blur',box.value); box.value=''" placeholder="What do you search?">
+		<button class="col-sm-2 btn btn-primary" (click)="doSearch('click button',box.value)" >Search</button>
+	</div>
+</form>
+
+<!-- Results -->
+<div class="card-columns">
+	<div *ngIf="results"><!-- there are results -->
+		<div *ngFor="let page of objectKeys(results); let i = index" class="card">
+			<app-card [data]="results[page]"></app-card>
+		</div>
+	</div>
+</div>
+
+
+<!-- {{ results | json }} -->

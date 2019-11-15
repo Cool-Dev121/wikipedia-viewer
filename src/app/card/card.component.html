@@ -1,0 +1,16 @@
+
+<!-- <li *ngFor="let val of data">{{val}}</li> -->
+<!-- 
+<div *ngFor="let item of data | keyvalue">
+  {{ item.key }} - {{ item.value }}
+</div>
+-->
+
+<div class="card-body">
+	<h5 class="card-title">{{ data.title }}</h5>
+	<p class="card-text">{{ data.extract }}</p>
+
+</div>
+<div class="card-footer text-muted">
+	<a href="{{data.fullurl}}" target="_blank" class="card-link">Read more</a>
+</div>
